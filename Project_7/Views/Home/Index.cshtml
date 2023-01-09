@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>Stats</h1>
+<div class="container">
+
+	<div class="row">
+
+		<div class="three col-md-4">
+			<div class="counter-box colored">
+				<i class="fa fa-thumbs-o-up"></i>
+				<span class="counter">@ViewData["UsersCount"]</span>
+				<p>Users</p>
+			</div>
+		</div>
+		<div class="three col-md-4">
+			<div class="counter-box">
+				<i class="fa fa-group"></i>
+				<span class="counter">@ViewData["ToDoListsCount"]</span>
+				<p>ToDo Lists</p>
+			</div>
+		</div>
+		<div class="three col-md-4">
+			<div class="counter-box">
+				<i class="fa  fa-shopping-cart"></i>
+				<span class="counter">@ViewData["ToDoItemsCount"]</span>
+				<p>ToDo Items</p>
+			</div>
+		</div>
+	</div>
+</div>
